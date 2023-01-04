@@ -9,7 +9,7 @@ describe('serenity-js.org website', () => {
 
     it(`tells people what they're reading`, () =>
         actorCalled('Alice').attemptsTo(
-            Navigate.to('https://serenity-js.org'),
+            Navigate.to('https://google.com'),
             Click.on(acceptCookiesButton),
             
             Ensure.that(Page.current().title(), includes('Serenity/JS')),
