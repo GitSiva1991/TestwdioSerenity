@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('TestSerenity') {
       steps {
-        echo 'Jenkins Serenity Report'
+        echo 'Jenkins Serenity Report',
       }
     }
 
