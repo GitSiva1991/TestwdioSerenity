@@ -9,7 +9,6 @@ describe('serenity-js.org website', () => {
         actorCalled('Alice').attemptsTo(
             Navigate.to('https://google.com'),
             
-            
             Ensure.that(Page.current().title(), includes('Google')),
         ));
 });
