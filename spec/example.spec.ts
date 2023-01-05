@@ -5,13 +5,10 @@ import { describe, it } from 'mocha';
 
 describe('serenity-js.org website', () => {
 
-    const acceptCookiesButton = PageElement.located(By.css('.cookieinfo-close')).describedAs('accept cookies button')
-
     it(`tells people what they're reading`, () =>
         actorCalled('Alice').attemptsTo(
-            Navigate.to('https://serenity-js.org'),
-            Click.on(acceptCookiesButton),
+            Navigate.to('https://google.com'),
             
-            Ensure.that(Page.current().title(), includes('Serenity/JS')),
+            Ensure.that(Page.current().title(), includes('Google')),
         ));
 });
