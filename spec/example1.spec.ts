@@ -7,7 +7,7 @@ describe('serenity-js.org website', () => {
 
     it(`tells people what they're reading`, () =>
         actorCalled('Alice').attemptsTo(
-            Navigate.to('https://jmeter.com'),
+            Navigate.to('https://google.com'),
             
             Ensure.that(Page.current().title(), includes('Google')),
         ));
